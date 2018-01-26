@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const axios = require('axios');
 const app = express();
-const PORT = 8000;
+const PORT =  process.env.PORT || 8000;
 const request = require('request-promise');
 
 function queryFood2Fork(item) {
@@ -36,7 +36,7 @@ app.get('/favs', function(req,res) {
   .select('favorites')
   .then((result) => {
   res.render('favorites', {
-    tagline:tagline,
+    // tagline:tagline,
     result:result
   })
   })
