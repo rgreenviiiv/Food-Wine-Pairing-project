@@ -1,0 +1,28 @@
+@import "../sass/utilities/initial-variables";
+@import "../sass/utilities/functions";
+
+/* #7b7f06 Color Hex,rgba(123, 127, 6, 1), hsla(62, 91%, 26%, 1) */
+/* #480010 Color Hex,rgba(72, 0, 16, 1), hsla(347, 100%, 14%, 1)*/
+/* #42511b */
+$green: #7b7f06;
+$red: #480010;
+$primary: $green;
+$
+
+// 2. Set your own initial variables
+// Update blue
+$blue: #72d0eb;
+// Add pink and its invert
+$pink: #ffb3b3;
+$pink-invert: #fff;
+// Add a serif family
+$family-serif: "Merriweather", "Georgia", serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $green;
+$primary-invert: $pink-invert;
+// Use the existing orange as the danger color
+$danger: $orange;
+// Use the new serif family
+$family-primary: $family-serif;

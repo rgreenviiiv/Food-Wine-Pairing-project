@@ -1,0 +1,36 @@
+body{
+  /*background-color: #7b7f06;*/
+  font: #480010;
+}
+.centerred{
+  text-align: center;
+  color: #480010;
+}
+.stay_there {
+  /*position: -webkit-sticky;*/
+  position: sticky;
+  top: 0;
+}
+.boldImg{
+  height:
+}
+img{
+  width: 100%
+  height: 100%
+}
+.mainImg{
+  display: grid;
+  grid-template: 1fr;
+}
+.imgs{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+}
+/*#sidebar {
+    position: -webkit-sticky;  // required for Safari
+    position: sticky;
+    top: 0; // required as well.
+} */
+/* #7b7f06 Color Hex,rgba(123, 127, 6, 1), hsla(62, 91%, 26%, 1) */
+/* #480010 Color Hex,rgba(72, 0, 16, 1), hsla(347, 100%, 14%, 1)*/

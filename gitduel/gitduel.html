@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Git Duel</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="gitduel.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid bg-warning">
+      <div class="container">
+        <h1 class="display-3">Git Duel</h1>
+        <p class="lead">Compare GitHub accounts with your friends!</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label for="username-1">Username</label>
+            <input class="form-control" type="text" id="username-1" placeholder="Enter a GitHub username">
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="username-1">Username</label>
+            <input class="form-control" type="text" id="username-2" placeholder="Enter another GitHub username">
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-2 mb-4">
+        <div class="col-4">
+          <button id="compare" class="btn btn-large btn-block btn-warning">Compare Accounts</button>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row mt-4">
+        <div id="user-1" class="col">
+          <div class="row">
+            <div class="col-4">
+              <img class="avatar rounded img-fluid" src="http://placehold.it/276x276?text=User+1" alt="">
+            </div>
+            <div class="col">
+              <h1 class="username">Username</h1>
+              <p class="name">
+                <strong>Name:</strong>
+                <span>Unknown</span>
+              </p>
+              <p class="public-repos">
+                <strong>Public Repos:</strong>
+                <span>Unknown</span>
+              </p>
+              <p class="followers">
+                <strong>Followers:</strong>
+                <span>Unknown</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="user-2" class="col">
+          <div class="row text-right">
+            <div class="col">
+              <h1 class="username">Username</h1>
+              <p class="name">
+                <strong>Name:</strong>
+                <span>Unknown</span>
+              </p>
+              <p class="public-repos">
+                <strong>Public Repos:</strong>
+                <span>Unknown</span>
+              </p>
+              <p class="followers">
+                <strong>Followers:</strong>
+                <span>Unknown</span>
+              </p>
+            </div>
+            <div class="col-4">
+              <img class="avatar rounded img-fluid" src="http://placehold.it/276x276?text=User+2" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

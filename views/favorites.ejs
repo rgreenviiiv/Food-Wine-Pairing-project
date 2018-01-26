@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../index.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+  <link rel="stylesheet" type="text/x-scss" href="../mystyles.scss" />
+  <title>Favorite Recipes</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+      </div>
+      <div class="column">
+        <h1 class="title is-3 centerred">
+             Favorite Recipes
+        </h1>
+      </div>
+      <div class="column">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <h1 class="title is-4">Favorite Recipes for: <%= tagline %></h1>
+        <% for(let i = 0; i < result.length; i++){ %>
+        <h1 class="title is-4">Seeing what result is doing: <%= result[i].email %></h1>
+        <div>
+          <% result[i].favorites.forEach((item) => { %>
+            <img src="<%= item.image_url %>">
+            <h3>
+              <%= item.title %>
+            </h3>
+            <p>
+              <a href="<%= item.source_url %>">View Recipe</a>
+          <% }) %>
+        </div>
+        <%}%>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

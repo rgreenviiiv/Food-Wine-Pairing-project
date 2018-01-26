@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../index.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+  <link rel="stylesheet" type="text/x-scss" href="../mystyles.scss" />
+  <title>No CleverName FoodPairing</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+      </div>
+      <div class="column">
+        <h1 class="title is-3 centerred">
+           Wine & Food Pairing
+         </h1>
+      </div>
+      <div class="column">
+
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="columns">
+      <div class="column is-one-quarter stay_there">
+        <h1 class="title is-4 centerred">WINE</h1>
+        <div class="tile is-parent">
+          <article class="message is-child notification is-white">
+            <!-- <figure class="clicked">
+             <img class="winePics" src="https://dydza6t6xitx6.cloudfront.net/ci_20877.jpeg">
+            </figure> -->
+            <div class="columns">
+              <div class="column">
+                <div class="imgs">
+                  <img class="drywhite" src="drywhite.jpg" />
+                  <img class="richwhite" src="richwhite.jpg" />
+                  <img class="sparkling" src="sparkling.jpg" />
+                  <img class="sweetwhite" src="sweetwhite.jpg" />
+                  <img class="lightred" src="lightred.jpg" />
+                  <img class="mediumred" src="mediumred.jpg" />
+                  <img class="boldred" src="boldred.jpg" />
+                  <img class="dessert" src="dessert.jpg" />
+                </div>
+              </div>
+              <div class="column">
+                <div class="mainImg">
+                  <img src="boldred.jpg"id="mainImgID"/>
+                </div>
+              </div>
+            </div>
+            <br />
+          </article>
+        </div>
+      </div>
+      <div class="column hidden3">
+        <h1 class="title is-4 centerred">FOOD & WINE CHART</h1>
+        <div class="tile is-parent">
+          <article class="message is-child notification is-white">
+            <figure class="clicked">
+              <img src="http://localhost:8000/wine-and-food-pairing-chart.png">
+            </figure>
+            <br />
+          </article>
+        </div>
+      </div>
+      <div class="column hidden">
+        <h1 class="title is-4 centerred">TITLE RECIPES</h1>
+        <article class="message is-success">
+          <div class="message-body hidden">
+            <ul id="recTitle">
+
+            </ul>
+          </div>
+        </article>
+      </div>
+      <div class="column hidden2 stay_there">
+        <h1 class="title is-4 centerred">RECIPE & IMAGE</h1>
+        <article class="message is-success">
+          <div class="message-body">
+            <img name="moreRecipes" src="" alt="">
+            <h1 class="title is-5 recipelist"></h1>
+            <p class="sourceUrl"></p>
+            <fieldset>
+              <form id="user_email_form">
+                <input id="email-input" type="email" />
+                <button>Favorite</button>
+              </form>
+              <button><a href="/favs">View Favorites</a></button>
+            </fieldset>
+          </div>
+        </article>
+      </div>
+      <!-- <div class="column">
+        <h1 class="title is-4">Where they can buy!</h1>
+        <p>
+          more Text to see where im putting this stuff im putting in this
+        </p>
+      </div>
+      <div class="column">
+        <h1 class="title is-4">Drizly/MiniBar/Instacartliqour</h1>
+        <p>
+          more Text to see where im putting this stuff im putting in this
+        </p>
+      </div> -->
+    </div>
+  </div>
+</body>
+<script src="https://npmcdn.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="../index.js"></script>
+<script type="text/javascript" src="../wineslide.js"></script>
+
+</html>
