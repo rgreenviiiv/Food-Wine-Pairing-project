@@ -10,7 +10,7 @@ function queryFood2Fork(item) {
   return request({
     uri: 'http://food2fork.com/api/search',
     qs: {
-      key: '',
+      key: '3916d15cff9c3897903bfe5852f1e415',
       q: item
     },
     json: true
